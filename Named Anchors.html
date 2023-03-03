@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title> Named Anchors</title>
+    </head>
+    <body>
+      <h1 id="1"> OOPS CONCEPTS</h1>
+      <ul>
+        <li><a href="#Classes and Objects">Classes and Objects</a> </li>
+        <li><a href="#Inheritance"> Inheritance</a> </li>
+        <li><a href="#Polymorphism">Polymorphism</a></li>
+        <li><a href="#Abstraction">Abstraction</a></li>
+      </ul>
+        <dl>
+          <dt id="Classes and Objects"> Classes and Objects</dt>
+         <dd>
+          A class is a template which defines the methods and properties of a particular kind of object. 
+          However, an object is an instance of a class. A class is an abstraction, while objects are real entities. 
+          Each object is defined by three elements: an identifier that ensures their uniqueness; a state that represents the values of his
+           properties; 
+          and a behaviour defined for the methods available in the class to which it belongs.
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+         We could imagine having two objects of the class Airplane: Flyer1 and EnolaGay29 (these are their identifiers). 
+         Their properties can have different values, the colour of Flyer1 could be white and the colour of EnolaGay29 could be gray. 
+         And the same is true for their children-objects: Flyer1 could have just one engine while EnolaGay29 could have four. However,
+           both objects would share their behaviour, the available methods of the class Airplane.
+
+         In the class diagram of figure 1 we have used a colour code: purple for abstract classes, blue for standard
+         classes and yellow for collections. Abstract classes cannot be directly instantiated, which means that an object cannot be created from it.
+         Abstract classes require standard subclasses for individual instantiation. Standard classes are the default type and they can be instantiated 
+         and used in code. A collection is a special type of class thought to contain other objects, usually objects of the same class. 
+          <a href="#1"> top page</a>
+        </dd>
+        
+            
+       <dl>
+          <dt id="Inheritance"> Inheritance</dt>
+          <dd>
+           Inheritance is the third of The Four Gods of OOP. It is a hierarchical relationship by which one or several classes (sub-classes) 
+           add the methods and properties of another class (super-class) to their own methods and properties.
+           To model inheritance on a class diagram, a solid line is drawn from the child class (the class inheriting the behaviour) with an unfilled 
+           arrowhead (or triangle) pointing to the super-class (see figure 1).
+           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          In our class diagram, classes Airplane, Helicopter and Balloon inherit from the abstract class Aircraft that groups the common functionalities, 
+         and each of them keeps its own functionalities. For example, airplanes, helicopters and balloons can go up and down, but balloons can´t change its velocity
+          or its relative path and just helicopters can rotate around themselves.
+
+           <a href="#1"> top page</a>
+          </dd>
+       </dl>
+
+
+       <dl>
+           <dt id="Polymorphism"> Polymorphism</dt>
+          <dd>
+            Polymorphism is the last of The Four Gods of OOP. It refers to the ability of one name to be assigned to different entities, 
+            such as, variables, methods or objects, depending on the context. In short: one name, multiple implementations.
+             In OOP there are many features that can be included as types of polymorphism. They are usually divided in two main groups distinguished by when the 
+             implementation is selected: static
+             polymorphism (at compile time) or dynamic polymorphism (at run time). We will explain one type of polymorphism for each group: 
+             operator overloading (static) and super-class polymorphism (dynamic). A detailed explanation of all types of polymorphism is beyond the scope of this article.
+             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            Operator overloading polymorphism represents the ability of an operator to have different implementations depending on their arguments. 
+             For example, in many languages the “+” symbol has three different behaviours depending on whether it is used between strings, numbers or logical 
+             expressions. In the first case it concatenates the two strings, in the second it performs the addition of both numbers and in the last it acts as the logical operator “OR”.
+
+             On the other hand, super-class polymorphism is a relaxation of the hierarchical structure by which a
+              variable can be declared as an abstract class and then be assigned to any of its sub-classes at run time. In the Airfield example we could declare a 
+            variable as Aircraft that in certain locations of our code behaves as Airplane, in others as Helicopter, and in others as Balloon.
+            <a href="#1"> top page</a>
+          </dd>
+       </dl>
+
+
+       <dl>
+            <dt id="Abstraction"> Abstraction</dt>
+           <dd>
+            Abstraction and encapsulation are two of the popularly known as The Four Gods or The Four Pillars of OOP. 
+            They are very different, but complementary concepts and both are highly related with information hiding.
+
+            Abstraction is the process of extract the relevant information about an item, or a group of items, while ignoring the 
+            unnecessary details. Abstraction allows using an item without understanding all internal details of them. For example, 
+            a pilot of an airplane knows that if he pushes the gas control lever, he increases the engine power but he doesn’t need to know 
+            how the combustion chamber or the turbine works.
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            Encapsulation is the act of grouping one or more items in a container. This implies building a conceptual barrier
+             between these items and the world outside the container. Encapsulation is not the same as information hiding, not everything
+              that is encapsulated is also hidden. Considering our example, the property Weight is encapsulated into the class Payload but 
+            can be acceded from the external world. The separation between encapsulation and information hiding is achieved through scope 
+            modifiers (Public, Private, Protected…). Classes are the main form of encapsulation but packages, interfaces or methods are other 
+            forms of encapsulation.
+            <a href="#1"> top page</a>
+          </dd>
+       </dl>
+
+    </body>
+</html>
